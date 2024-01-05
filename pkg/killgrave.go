@@ -11,6 +11,9 @@ import (
 	"net/http"
 )
 
+type Server = server.Server
+type Config = killgrave.Config
+
 // RunServer will run killgrave mock server
 func RunServer(cfg killgrave.Config) server.Server {
 	_defaultStrictSlash := true
